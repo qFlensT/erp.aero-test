@@ -1,4 +1,11 @@
 # Тестовое задание для erp.aero
+## Как развернуть проект?
+1. `git clone https://github.com/qFlensT/erp.aero-test`
+2. `npm i`
+3. `docker compose up -d`
+4. `npx prisma db push`
+5. `npm run start:dev`
+
 ## Архитектура проекта
 Выбранная архитектура проекта - `Clean Architecture`
 
