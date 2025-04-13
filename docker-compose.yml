@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  db:
+    image: mysql:8.0
+    container_name: erp-db
+    volumes:
+      - erp-db:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=erp
+      - MYSQL_USER=erp_user
+      - MYSQL_PASSWORD=erp_password
+      - MYSQL_ROOT_PASSWORD=root_password
+    ports:
+      - 3306:3306
+volumes:
+  erp-db:
